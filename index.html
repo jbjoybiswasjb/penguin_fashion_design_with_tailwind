@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>12_6 penguin desing with tailwind</title>
+        <title>12_6 penguin desing with tailwind</title>
 
-    <!-- Google fonts. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+        <!-- Google fonts. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
 
-    <!-- Tailwind CSS. -->
-    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Tailwind CSS. -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        /* Google fonts. */
-        .bebas_neue {
-            font-family: 'Bebas Neue', sans-serif;
-        }
+        <style>
+            /* Google fonts. */
+            .bebas_neue {
+                font-family: 'Bebas Neue', sans-serif;
+            }
 
-        .montserrat {
-            font-family: 'Montserrat', sans-serif;
-        }
+            .montserrat {
+                font-family: 'Montserrat', sans-serif;
+            }
 
-        .roboto {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
+            .roboto {
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
+        <header>
 
-        <nav></nav>
+            <nav></nav>
 
-        <section class="flex sm:flex-col md:justify-between items-center py-16 px-32 bg-amber-50">
-            <div class="roboto">
-                <h1 class="text-[#363958] text-7xl font-normal bebas_neue"><span class="text-[#FABE4C] uppercase">Be the
-                        Penguins</span> <br> of Winter
-                </h1>
-                <p class="text-[#3E3E3E] text-base mb-2">Lorem Ipsum is simply dummy text of the printing <br>and
-                    typesetting industry.</p>
-                <button
-                    class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] ... text-white text-base font-medium leading-6 rounded-2xl py-4 px-8 uppercase"><svg
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 inline">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
-                    BUY NOW</button>
-            </div>
+            <section class="flex flex-col md:flex-row items-center py-3 md:py-16 px-3 md:px-32 bg-amber-50">
 
-            <div class="">
-                <img src="images/model.png" alt="This is our model picture." title="This is our model image.">
-            </div>
-        </section>
+                <div class="roboto my-10 space-y-3">
+                    <h1 class="text-[#363958] text-7xl font-normal bebas_neue"><span class="text-[#FABE4C] uppercase">Be
+                            the
+                            Penguins</span> <br> of Winter
+                    </h1>
+                    <p class="text-[#3E3E3E] text-base mb-2">Lorem Ipsum is simply dummy text of the printing <br>and
+                        typesetting industry.</p>
+                    <button
+                        class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] ... text-white text-base font-medium leading-6 rounded-2xl py-4 px-8 uppercase"><svg
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 inline">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                        BUY NOW</button>
+                </div>
 
-    </header>
+                <div class="">
+                    <img src="images/model.png" alt="This is our model picture." title="This is our model image.">
+                </div>
 
-    <main class="max-w-7xl mx-auto">
+            </section>
 
-        <!-- Cart section. -->
-        <section class="roboto">
-            <h3 class="uppercase bebas_neue text-5xl font-normal">Woman Jacket</h3>
-        </section>
-    </main>
+        </header>
 
-    <footer>
-    </footer>
+        <main class="max-w-7xl mx-auto">
 
-</body>
+            <!-- Cart section. -->
+            <section class="roboto py-12">
+                <h3 class="uppercafse bebas_neue text-5xl font-normal">Woman Jacket</h3>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+
+    </body>
 
 </html>
